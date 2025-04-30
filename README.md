@@ -1,6 +1,6 @@
 # AlloyTest_OliviaSchriber
 
-A simple Java console application that interacts with the [Alloy API](https://www.alloy.com) to evaluate user identity data. It collects user inputs, formats the data according to Alloy's expected structure, and submits  for evaluation. The result is displayed to the user in a clear, human-readable format.
+A simple Java console application that interacts with the Alloy API to evaluate user identity data. It collects user inputs, formats the data according to Alloy's expected structure, and submits the data for evaluation. The result is displayed to the user in a clear, human-readable format.
 
 ---
 
@@ -9,9 +9,9 @@ A simple Java console application that interacts with the [Alloy API](https://ww
 - Retrieves identity parameters via `GET /v1/parameters`
 - Prompts for validated user input (regex-based where applicable)
 - Assembles and formats the request body
-- Sends identity data via `POST /v1/evaluations`
+- Sends identity data via a JSON payload via an HTTP POST request
 - Displays Alloy's evaluation outcome (Approved, Denied, or Manual Review)
-- ⚠Graceful error handling and response feedback
+- Graceful error handling and response feedback
 
 ---
 
@@ -42,7 +42,6 @@ A simple Java console application that interacts with the [Alloy API](https://ww
 
 The following identity fields will be prompted:
   First Name, Last Name, Birth Date, Email Address, Address (Address Line 1, Address Line 2, Address City, Address State, Address Postal Code, Address Country Code) and SSN.
-
 
 ---
 
