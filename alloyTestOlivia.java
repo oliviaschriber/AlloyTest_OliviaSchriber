@@ -17,7 +17,7 @@ public class alloyTestOlivia {
 	public static void main(String[] args) throws IOException, InterruptedException {
 
 		// auth string here
-		String auth = "";
+		String auth = System.getenv("Alloy_Auth");
 
 		// Create a reusable HttpClient
 		HttpClient client = HttpClient.newHttpClient();
