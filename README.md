@@ -52,7 +52,7 @@ After submitting the data to Alloy, the app prints:
 - **Approved** – `"Congratulations! You are approved."`
 - **Denied** – `"Unfortunately, we cannot approve your application at this time."`
 - **Manual Review** – `"Your application is under review. Please wait for further updates."`
-- ⚠**Error** – Human-readable messages parsed from the error object
+- **Error** – Human-readable messages parsed from the error object
 
 ---
 
@@ -61,6 +61,17 @@ After submitting the data to Alloy, the app prints:
 - You can modify `neededInputs` to match any field returned by the `/v1/parameters` endpoint.
 - The application uses `TypeToken` from Gson to avoid unchecked type warnings and ensure safe casting of JSON responses.
 - Regex validation overrides are hardcoded for `email_address` and `birth_date`.
+
+--- 
+
+## Use of ChatGPT
+
+ChatGPT GPT-4o mini and GPT-4o were used for:
+
+- Improving code quality and readability
+- Building incremental improvements
+- Options available to parse JSON (decided on GSON) and help with formatting 
+- Help with Javadoc style comments and drafting ReadMe 
 
 ---
 
